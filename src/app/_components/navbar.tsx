@@ -17,15 +17,15 @@ export function Nav(){
     };
     return(
         <>
-         <div className="flex items-center justify-between px-5 lg:px-8 w-full py-2 fixed bg-white">
+         <div className="flex items-center justify-between px-5 lg:px-12 w-full pt-3 pb-2 fixed bg-white">
             <ProfileLogoText />
-            <div className="hidden md:flex items-center space-x-8 capitalize font-semibold">
+            <div className="hidden lg:flex items-center space-x-8 capitalize font-semibold">
                 <Link href={'#'} className="hover:underline">about me</Link>
                 <Link href={'#'} className="hover:underline">skills</Link>
                 <Link href={'#'} className="hover:underline">project</Link>
                 <Link href={'#'} className="hover:underline">contact me</Link>
             </div>
-            <button type="submit" className="hidden md:flex items-center gap-2 text-white bg-black font-semibold px-4 py-2 rounded">Resume <DownloadIcon/></button>
+            <button type="submit" className="hidden lg:flex items-center gap-2 text-white bg-black font-semibold px-4 py-2 rounded">Resume <DownloadIcon/></button>
          <button onClick={toggleMenu} className="lg:hidden">
             {isOpen ?(
                 <RiCloseLine className="h-8 w-8" />

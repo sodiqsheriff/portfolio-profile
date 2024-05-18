@@ -3,7 +3,13 @@ import { Inter } from "next/font/google";
 import { Nav } from "./_components/navbar";
 import "./globals.css";
 import { Hero } from "./_components/herosection";
-
+import {Skill} from "./_components/skills"
+import { About } from "./_components/about";
+import { Project } from "./_components/projects"
+import { Testimonial } from "./_components/testimonial"
+import { Connect } from "./_components/connect"
+import { Footer } from "./_components/footer"
+ 
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
@@ -21,6 +27,12 @@ export default function RootLayout({
       <body className={inter.className}>
         <Nav/>
         <Hero />
+        <Skill />
+        <About/>
+        <Project />
+        <Testimonial />
+        <Connect />
+        <Footer />
         {children}
         </body>
     </html>
